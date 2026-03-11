@@ -109,7 +109,6 @@ jobs:
           git clone --branch gh-pages https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git gh-pages-repo
           cp -r target/doc gh-pages-repo/rattler
           echo '<meta http-equiv="refresh" content="0; url=rattler/index.html">' > gh-pages-repo/index.html
-          echo '<meta http-equiv="refresh" content="0; url=rattler/index.html">' > gh-pages-repo/rattler/index.html
           echo "User-Agent: *" > gh-pages-repo/robots.txt
           echo "Disallow: /" >> gh-pages-repo/robots.txt
           touch gh-pages-repo/.nojekyll
@@ -159,7 +158,6 @@ jobs:
           git clone --branch gh-pages https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git gh-pages-repo
           cp -r target/doc gh-pages-repo/rattler
           echo '<meta http-equiv="refresh" content="0; url=rattler/index.html">' > gh-pages-repo/index.html
-          echo '<meta http-equiv="refresh" content="0; url=rattler/index.html">' > gh-pages-repo/rattler/index.html
           echo "User-Agent: *" > gh-pages-repo/robots.txt
           echo "Disallow: /" >> gh-pages-repo/robots.txt
           touch gh-pages-repo/.nojekyll
